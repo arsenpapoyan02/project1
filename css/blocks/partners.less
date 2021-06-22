@@ -1,0 +1,67 @@
+// main: ../style.less
+
+.partners {
+    background-color: @dark;
+
+    & .section__header {
+        padding: 10rem 0 6rem 0;
+
+        .section__header--title {
+            color: @white;
+        }
+    }
+}
+
+.partners__inner {
+    display: flex;
+    justify-content: space-between;
+
+    padding-bottom: 10rem;
+}
+
+
+@media @tablet {
+    .partners {
+
+        & .section__header {
+            padding: 4rem 0 3rem 0;
+        }
+    }
+
+    .partners__inner {
+        padding-bottom: 3rem;
+    }
+}
+
+@media @mobile {
+    .partners__inner {
+        flex-direction: column;
+        align-items: center;
+
+        & img {
+            margin-bottom: 3rem;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+@media @mobile {
+
+    .partners {
+
+        & .section__header {
+            padding: 2rem 0;
+        }
+    }
+
+    .partners__inner {
+        padding-bottom: 1rem;
+
+        & img {
+            margin-bottom: 2rem;
+        }
+    }
+}

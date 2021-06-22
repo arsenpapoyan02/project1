@@ -1,0 +1,58 @@
+// main: ../style.less
+
+.burger{
+    width: 3.5rem;
+    height: 3rem;
+    background: none;
+    border: none;
+    background-color: @red;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+
+
+    &.active {
+
+
+        & .burger__item {
+            background: 0;
+
+            &:before {
+                transform-origin: left top;
+                transform: rotate(45deg) translateY(-2px) translateX(3px);
+            }
+            &:after {
+                transform-origin: left bottom;
+                transform: rotate(-45deg) translateY(3px) translateX(2px);
+            }
+        }
+    }
+}
+
+.burger__item {
+    display: block;
+    width: 1.5rem;
+    height: .2rem;
+    background-color: @white;
+    position: relative;
+    margin: 0 auto;
+
+    &:before,
+    &:after {
+        display: block;
+        content: '';
+        width: inherit;
+        height: inherit;
+        background-color: @white;
+        position: absolute;
+        top: -.5rem;
+        left: 0;
+        z-index: 1;
+        transition: all .2s linear;
+    }
+
+    &:after {
+        top: .5rem;
+    }
+
+}

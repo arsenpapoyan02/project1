@@ -1,0 +1,32 @@
+// main: ../style.less
+
+.header {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: @z-index-header;
+
+    &.active {
+        position: fixed;
+        background-color: #15151d;
+    }
+
+    &.activeM {
+        position: fixed;
+    }
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 2rem 0;
+}
+
+@media @mobile-sm {
+    .header__inner {
+        padding: 1rem 0;
+    }
+}

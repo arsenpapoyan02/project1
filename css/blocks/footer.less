@@ -1,0 +1,29 @@
+// main: ../style.less
+
+.footer {
+    background-color: @dark;
+}
+
+.footer__inner {
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem 0;
+}
+
+.footer__inner--description {
+    font-size: 1.4rem;
+    color: @white;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+
+
+@media @mobile-sm {
+    .footer__inner {
+        padding: 1rem 0;
+    }
+
+    .footer__inner--description {
+        font-size: .9rem;
+    }
+}

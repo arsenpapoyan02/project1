@@ -1,0 +1,53 @@
+// main: ../style.less
+
+.burger__menu {
+    width: 100%;
+    min-height: 100%;
+    background-color: #15151d;
+
+    position: fixed;
+    top: 0;
+    right: -100%;
+    z-index: 800;
+
+    transition: right .2s ease;
+
+    &.active {
+        right: 0;
+    }
+
+    & .btn {
+        position: absolute;
+        bottom: 5rem;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+    }
+}
+
+.nav {
+    display: inline-block;
+    margin-top: 15rem;
+}
+
+.nav__link {
+    display: block;
+    font-size: 2rem;
+    color: @white;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    transition: color .2s linear;
+    padding: 1rem 0;
+
+    &:hover {
+        color: @red;
+    }
+}
+
+
+@media @mobile-sm {
+    .nav {
+        margin-top: 10rem;
+    }
+}

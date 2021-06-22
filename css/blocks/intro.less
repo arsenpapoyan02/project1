@@ -1,0 +1,151 @@
+// main: ../style.less
+
+.intro {
+    background: #404149 url(../images/intro/bg.jpg) no-repeat center / cover;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    & .container {
+        margin-top: auto;
+    }
+}
+
+
+.intro__inner--title {
+    max-width: 73rem;
+    font-size: 6.4rem;
+    color: @white;
+    font-weight: 500;
+    line-height: 1.3;
+    text-align: center;
+    margin: 0 auto;
+    text-transform: uppercase;
+
+    margin-bottom: 3rem;
+}
+
+.intro__inner--text {
+    font-size: 1.8rem;
+    color: @white;
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+.intro__inner--block {
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+
+    background-color: #F7F7F7;
+    padding: 5rem 20rem;
+    margin-top: 17rem;
+    margin-bottom: -13rem;
+ }
+
+.intro__block--item {
+//    width: 100%;
+//    max-width: 15rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.intro__block--item--num {
+    font-size: 7.2rem;
+    color: @red;
+    font-weight: 500;
+    text-transform: uppercase;
+    line-height: 1.1;
+    margin-bottom: 2rem;
+}
+
+.intro__block--item--age {
+    font-size: 3.6rem;
+    font-weight: 500;
+    line-height: 1.3;
+    text-transform: uppercase;
+}
+
+.intro__block--item--text {
+    font-size: 1.8rem;
+    color: @gray;
+    font-weight: 500;
+}
+
+
+@media @large {
+    .intro {
+        & .container {
+            margin-top: 0;
+        }
+    }
+
+    .intro__inner--block {
+        margin-top: 10rem;
+        padding: 5rem 10rem;
+    }
+}
+
+
+@media @mobile {
+    .intro__inner--title {
+        font-size: 5rem;
+    }
+
+    .intro__inner--block {
+        padding: 1rem 0;
+    }
+}
+
+@media @mobile-sm {
+
+    .intro__inner {
+        margin-top: -5rem;
+    }
+
+    .intro__inner--title {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .intro__inner--text {
+        font-size: 1.5rem;
+    }
+
+    .intro__inner--block {
+        flex-wrap: wrap;
+        padding: 1rem 0;
+        margin-top: 6rem;
+    }
+
+    .intro__block--item {
+        flex-basis: 50%;
+        margin-bottom: 1rem;
+
+        &:nth-child(3) {
+            margin-bottom: 0;
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    .intro__block--item--num {
+        font-size: 3rem;
+        margin-bottom: .5rem;
+    }
+
+    .intro__block--item--age {
+        font-size: 2rem;
+        margin-bottom: .2rem;
+    }
+}
+

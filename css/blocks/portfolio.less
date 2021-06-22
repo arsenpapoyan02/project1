@@ -1,0 +1,18 @@
+// main: ../style.less
+
+.portfolio__inner {
+    display: flex;
+    flex-wrap: wrap;
+
+    img {
+        max-width: 25%;
+    }
+}
+
+@media @mobile-sm {
+    .portfolio__inner {
+        img {
+            max-width: 50%;
+        }
+    }
+}

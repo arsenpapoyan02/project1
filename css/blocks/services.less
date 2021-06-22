@@ -1,0 +1,57 @@
+// main: ../style.less
+
+.services__inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    padding-bottom: 12rem;
+}
+
+.services__inner--item {
+    flex-basis: 32%;
+
+    background-color: #F7F7F7;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 6rem 9rem 5rem 9rem;
+    text-align: center;
+    margin-left: 1rem;
+    margin-bottom: 3rem;
+
+    & img {
+        margin-bottom: 3rem;
+    }
+}
+
+@media @tablet {
+    .services__inner {
+        padding-bottom: 5rem;
+        justify-content: center;
+        margin-left: -1rem;
+    }
+
+    .services__inner--item {
+        flex-basis: 35%;
+        margin-left: 2rem;
+    }
+}
+
+@media @mobile-sm {
+    .services__inner {
+        margin-left: 0;
+        padding-bottom: 3rem;
+    }
+
+    .services__inner--item {
+        margin-left: 0;
+
+        &:last-child {
+            margin: 0;
+        }
+    }
+}

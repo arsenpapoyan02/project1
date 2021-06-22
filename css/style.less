@@ -1,0 +1,56 @@
+// compress: true;
+
+@import "vars";
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-size: 1rem;
+    font-family: 'Oswald', sans-serif;
+    color: @black;
+    margin: 0;
+    padding: 0;
+
+    &.no-scroll {
+        overflow: hidden;
+    }
+}
+
+.page {
+    overflow: hidden;
+}
+
+h1,h2,h3,h4,h5,h6,a,p,img {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    display: block;
+}
+
+@import "blocks/container";
+@import "blocks/header";
+@import "blocks/burger";
+@import "blocks/nav";
+@import "blocks/intro";
+@import "blocks/projects";
+@import "blocks/request";
+@import "blocks/btn";
+@import "blocks/section__header";
+@import "blocks/services";
+@import "blocks/portfolio";
+@import "blocks/question";
+@import "blocks/partners";
+@import "blocks/reviews";
+@import "blocks/contact";
+@import "blocks/footer";
+@import "blocks/modal";
